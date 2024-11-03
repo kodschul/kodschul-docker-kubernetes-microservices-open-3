@@ -1,0 +1,65 @@
+# Docker Swarm Übungen
+
+## Übung 1: Einrichtung eines Docker Swarm Clusters
+
+**Ziel:** Einrichten eines einfachen Docker Swarm Clusters mit einem Manager- und einem Worker-Node.
+
+### Schritte:
+
+1. **Auf dem Manager-Node:**
+   - Initialisieren Sie den Swarm mit dem Befehl:
+
+2. **Auf dem Worker-Node:**
+   - Führen Sie den Join-Befehl aus, um dem Swarm beizutreten:
+
+3. **Überprüfung:**
+   - Auf dem Manager-Node:
+   - Stellen Sie sicher, dass beide Nodes im Cluster angezeigt werden.
+
+## Übung 2: Erstellen und Skalieren eines Services
+
+**Ziel:** Erstellen eines einfachen Web-Services und Skalieren der Anzahl der Replikate.
+
+### Schritte:
+
+1. **Erstellen des Services:**
+   - Auf dem Manager-Node:
+
+2. **Überprüfung des Services:**
+   - Liste der Services anzeigen:
+   - Details zum Service anzeigen:
+
+3. **Skalieren des Services:**
+   - Erhöhen Sie die Anzahl der Replikate auf 4:
+
+## Übung 3: Implementierung von Load Balancing
+
+**Ziel:** Verstehen, wie Docker Swarm eingehenden Traffic auf die Service-Replikate verteilt.
+
+### Schritte:
+
+1. **Testen des Load Balancers:**
+   - Öffnen Sie einen Webbrowser und navigieren Sie zu `http://<Manager-IP>:8080`.
+   - Aktualisieren Sie die Seite mehrmals und beobachten Sie, wie Docker Swarm den Traffic auf die verschiedenen Replikate verteilt.
+
+## Übung 4: Aktualisieren eines Services ohne Ausfallzeit
+
+**Ziel:** Durchführen eines Rolling Updates eines Services, um eine neue Version bereitzustellen.
+
+### Schritte:
+
+1. **Aktualisieren des Services:**
+   - Führen Sie folgenden Befehl aus, um den Service auf eine neue Version zu aktualisieren:
+
+2. **Überprüfung:**
+   - Überwachen Sie den Fortschritt des Updates:
+
+## Übung 5: Erstellen eines benutzerdefinierten Overlay-Netzwerks
+
+**Ziel:** Erstellen eines benutzerdefinierten Overlay-Netzwerks und Starten eines Services innerhalb dieses Netzwerks.
+
+### Schritte:
+
+1. **Erstellen des Netzwerks:**
+
+2. **Erstellen des Services im benutzerdefinierten Netzwerk:**
